@@ -1,0 +1,13 @@
+{
+    "require": {
+        "composer/installers": "dev-master",
+        "cakephp/debug_kit": "2.2.*",
+        "twitter/bootstrap": "3.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "config": {
+        "vendor-dir": "Vendor"
+    }
+}
