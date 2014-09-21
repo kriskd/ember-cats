@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EmberCats</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/ember-cats.css">
+  </head>
+  <body>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/ember-cats.js"></script>
+    <script>
+      window.EmberCatsENV = require('ember-cats/config/environment')['default'];
+      window.EmberENV = window.EmberCatsENV.EmberENV;
+      window.EmberCats = require('ember-cats/app')['default'].create(EmberCatsENV.APP);
+    </script>
+  </body>
+</html>
