@@ -1,6 +1,7 @@
 node_modules/
 Vendor/
 tmp/
+Plugin/
 
 
 # See http://help.github.com/ignore-files/ for more about ignoring files.
@@ -14,9 +15,9 @@ ember-cats/node_modules
 ember-cats/bower_components/*
 
 # misc
-ember-cats/.sass-cache
+/ember-cats/.sass-cache
 /ember-catsconnect.lock
 /ember-catscoverage/*
-ember-cats/libpeerconnection.log
-ember-cats/npm-debug.log
-ember-cats/testem.log
+/ember-cats/libpeerconnection.log
+/ember-cats/npm-debug.log
+/ember-cats/testem.log
