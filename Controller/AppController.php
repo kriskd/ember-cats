@@ -35,4 +35,7 @@ class AppController extends Controller {
     public $components = array(
         'RequestHandler'
     );
+
+    public $viewClass = 'Serializers.CakeSerializer';
+    public $renderAs = 'json';
 }

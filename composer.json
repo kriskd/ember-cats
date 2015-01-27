@@ -2,7 +2,9 @@
     "require": {
         "composer/installers": "dev-master",
         "cakephp/cakephp": "2.*",
-        "cakephp/debug_kit": "2.2.*"
+        "cakephp/debug_kit": "2.2.*",
+        "cakephp/datasources": "2.3.*@dev",
+        "loadsys/cakephp_serializers": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*"

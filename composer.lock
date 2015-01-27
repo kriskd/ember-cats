@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "878def7d0f722a88c3a2b95030926c17",
+    "hash": "800baf3306c755ce96d550305ad5c232",
     "packages": [
         {
             "name": "cakephp/cakephp",
-            "version": "2.6.0",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "02ca7f5fcb77e18ed0512c847135336fba98398c"
+                "reference": "09e5e43d0950bcee1b1792bc1355492024a5e54c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/02ca7f5fcb77e18ed0512c847135336fba98398c",
-                "reference": "02ca7f5fcb77e18ed0512c847135336fba98398c",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/09e5e43d0950bcee1b1792bc1355492024a5e54c",
+                "reference": "09e5e43d0950bcee1b1792bc1355492024a5e54c",
                 "shasum": ""
             },
             "require": {
@@ -47,7 +47,59 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-12-23 16:26:27"
+            "time": "2015-01-16 02:36:35"
+        },
+        {
+            "name": "cakephp/datasources",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cakephp/datasources.git",
+                "reference": "47c4672cbd8902ef57557d50dd772368863596a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cakephp/datasources/zipball/47c4672cbd8902ef57557d50dd772368863596a8",
+                "reference": "47c4672cbd8902ef57557d50dd772368863596a8",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.2.8"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                },
+                "installer-name": "Datasources"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "CakePHP Community",
+                    "homepage": "https://github.com/cakephp/datasources/graphs/contributors"
+                }
+            ],
+            "description": "CakePHP Datasources Plugin",
+            "homepage": "https://github.com/cakephp/datasources",
+            "keywords": [
+                "adodb",
+                "cakephp",
+                "couchdb",
+                "datasources",
+                "db2",
+                "firebird",
+                "ldap",
+                "odbc",
+                "sqlite",
+                "sqlserver",
+                "sybase"
+            ],
+            "time": "2014-02-19 14:14:38"
         },
         {
             "name": "cakephp/debug_kit",
@@ -104,12 +156,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "89d77bfbee79e16653f7162c86e602cc188471db"
+                "reference": "2d91dc9ce37bbf876cd408d483270a07001d8c7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/89d77bfbee79e16653f7162c86e602cc188471db",
-                "reference": "89d77bfbee79e16653f7162c86e602cc188471db",
+                "url": "https://api.github.com/repos/composer/installers/zipball/2d91dc9ce37bbf876cd408d483270a07001d8c7d",
+                "reference": "2d91dc9ce37bbf876cd408d483270a07001d8c7d",
                 "shasum": ""
             },
             "replace": {
@@ -151,6 +203,7 @@
                 "Hurad",
                 "MODX Evo",
                 "OXID",
+                "SMF",
                 "Thelia",
                 "WolfCMS",
                 "agl",
@@ -189,30 +242,29 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-11-29 01:29:17"
+            "time": "2015-01-21 21:08:45"
         },
         {
-            "name": "twitter/bootstrap",
-            "version": "v3.3.1",
+            "name": "loadsys/cakephp_serializers",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "9a7e365c2c4360335d25246dac11afb1f577210a"
+                "url": "https://github.com/loadsys/CakePHP-Serializers.git",
+                "reference": "0f795d31e9b3dbc2758f1aa4e327c7ad9d5da12a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/9a7e365c2c4360335d25246dac11afb1f577210a",
-                "reference": "9a7e365c2c4360335d25246dac11afb1f577210a",
+                "url": "https://api.github.com/repos/loadsys/CakePHP-Serializers/zipball/0f795d31e9b3dbc2758f1aa4e327c7ad9d5da12a",
+                "reference": "0f795d31e9b3dbc2758f1aa4e327c7ad9d5da12a",
                 "shasum": ""
             },
-            "replace": {
-                "twitter/bootstrap": "self.version"
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.0"
             },
-            "type": "library",
+            "type": "cakephp-plugin",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3.x-dev"
-                }
+                "installer-name": "Serializers"
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -220,27 +272,26 @@
             ],
             "authors": [
                 {
-                    "name": "Jacob Thornton",
-                    "email": "jacobthornton@gmail.com"
+                    "name": "Joey Trapp",
+                    "homepage": "https://github.com/joeytrapp"
                 },
                 {
-                    "name": "Mark Otto",
-                    "email": "markdotto@gmail.com"
+                    "name": "Justin Yost",
+                    "email": "justin.yost@yostivanich.com",
+                    "homepage": "https://www.yostivanich.com/",
+                    "role": "Developer"
                 }
             ],
-            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-            "homepage": "http://getbootstrap.com",
+            "description": "An object oriented solution to CakePHP model data serialization to JSON.",
+            "homepage": "https://github.com/loadsys/CakePHP-Serializers",
             "keywords": [
-                "JS",
-                "css",
-                "framework",
-                "front-end",
-                "less",
-                "mobile-first",
-                "responsive",
-                "web"
+                "cakephp",
+                "cakephp-plugin",
+                "json",
+                "serializers",
+                "view"
             ],
-            "time": "2014-11-12 17:03:16"
+            "time": "2015-01-08 17:39:31"
         }
     ],
     "packages-dev": [
@@ -661,7 +712,9 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "composer/installers": 20
+        "composer/installers": 20,
+        "cakephp/datasources": 20,
+        "loadsys/cakephp_serializers": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
