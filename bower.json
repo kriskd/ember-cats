@@ -1,0 +1,6 @@
+{
+    "name": "Ember Cats",
+    "dependencies" : {
+        "bootstrap": "3.*"
+    }
+}
