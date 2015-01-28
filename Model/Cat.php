@@ -51,6 +51,6 @@ class Cat extends AppModel {
                 $results[$key] = $value[$this->alias];
             }
         }
-        return [$this->alias => $results];
+        return $results;
     }
 }
