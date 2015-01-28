@@ -44,4 +44,13 @@ class Cat extends AppModel {
             ],
         ];
 
+    public function afterFind($results, $primary = false) {
+        parent::afterFind($results, $primary);
+        if (is_array($results)) {
+            foreach ($results as $key => $value) {
+                $results[$key] = $value[$this->alias];
+            }
+        }
+        return [$this->alias => $results];
+    }
 }
