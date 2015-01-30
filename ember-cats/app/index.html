@@ -7,18 +7,19 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{BASE_TAG}}
+    {{content-for 'head'}}
 
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/ember-cats.css">
+
+    {{content-for 'head-footer'}}
   </head>
   <body>
+    {{content-for 'body'}}
+
     <script src="assets/vendor.js"></script>
     <script src="assets/ember-cats.js"></script>
-    <script>
-      window.EmberCatsENV = require('ember-cats/config/environment')['default'];
-      window.EmberENV = window.EmberCatsENV.EmberENV;
-      window.EmberCats = require('ember-cats/app')['default'].create(EmberCatsENV.APP);
-    </script>
+
+    {{content-for 'body-footer'}}
   </body>
 </html>

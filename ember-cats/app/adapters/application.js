@@ -1,6 +1,12 @@
-import Ember from "ember";
 import DS from "ember-data";
 
 export default DS.RESTAdapter.extend({
   host: 'http://ember-cats.dev'
+});
+
+export default DS.RESTSerializer.extend({
+  primaryKey: 'id',
+     serializeId: function(id) {
+       return id.toString();
+   }
 });
