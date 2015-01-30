@@ -16,8 +16,8 @@ ember-cats/bower_components/*
 
 # misc
 /ember-cats/.sass-cache
-/ember-catsconnect.lock
-/ember-catscoverage/*
+/ember-cats/connect.lock
+/ember-cats/coverage/*
 /ember-cats/libpeerconnection.log
 /ember-cats/npm-debug.log
 /ember-cats/testem.log
