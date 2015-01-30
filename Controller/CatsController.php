@@ -8,8 +8,7 @@ class CatsController extends AppController {
             'Access-Control-Allow-Origin: *',
         ));
 
-        $cats = $this->Cat->find('all');
-        $this->set('cats', $cats);
-        $this->set('_serialize', array('cats'));
+        $data = $this->Cat->find('all');
+        $this->set('data', $data);
     }
 }

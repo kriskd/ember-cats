@@ -44,6 +44,21 @@ class Cat extends AppModel {
             ],
         ];
 
+    protected $_schema = array(
+        'id' => array(
+            'type' => 'integer',
+            'length' => 11, 
+            'null' => '',
+            'default' => '',
+        ),
+        'name' => array(
+            'type' => 'string',
+            'length' => 30,
+            'null' => '',
+            'default' => '',
+        ),
+    );
+
     public function afterFind($results, $primary = false) {
         parent::afterFind($results, $primary);
         if (is_array($results)) {

@@ -1,1 +1,1 @@
-<?php echo $cats; ?>
+<?php //echo json_encode($cats); ?>
