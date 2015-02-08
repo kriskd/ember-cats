@@ -5,6 +5,15 @@ module.exports = function(environment) {
     modulePrefix: 'ember-cats',
     environment: environment,
     baseURL: '/',
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self'",
+      'font-src': "'self'",
+      'connect-src': "'self' http://ember-cats.dev",
+      'img-src': "'self'",
+      'style-src': "'self'",
+      'media-src': "'self'"
+    },
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
